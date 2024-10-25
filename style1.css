@@ -1,0 +1,70 @@
+
+.row
+{
+    display: flex;
+}
+.border
+{
+    border: 1px solid black;
+}
+.trzykolumny
+{
+    width: 33.3333333%;
+    
+}
+.czterykolumny
+{
+    width: 25%;
+}
+.textpodimg
+{
+    text-align: center;
+}
+.row img 
+{
+    height: auto;
+}
+.tytuly
+{
+    text-align: center;
+}
+
+.kolumna
+{
+    width: 50%;
+    text-align: center;
+}
+.kolumna label
+{   
+    display: block;
+    margin-bottom: 8px ;
+    margin-left: 25%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.kolumna input, .kolumna select
+{
+    margin-bottom: 35px;
+    width: 50%;
+    font-size: 14px;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 25px;
+    background-color: rgb(224, 247, 255);
+    
+
+}
+
+.kolumna button
+{   
+    display: block;
+    width: 25%;
+    height: 75px;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: large;
+    border-radius: 25px;
+    
+}
+
