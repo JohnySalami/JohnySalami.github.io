@@ -29,6 +29,12 @@
     text-align: center;
 }
 
+
+.row1
+{
+    display: flex;
+}
+
 .kolumna
 {
     width: 50%;
@@ -52,7 +58,7 @@
     border-width: 1px;
     height: 25px;
     background-color: rgb(224, 247, 255);
-    
+    box-sizing: border-box;
 
 }
 
@@ -67,4 +73,57 @@
     border-radius: 25px;
     
 }
+
+#kalkulator
+{
+    border: 1px solid black ;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+#wynik
+{
+    width: 100%;
+    text-align: right;
+    padding: 2px;
+    font-size: 50px;
+    color: black;
+    
+}
+
+#przyciski
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+#przyciski div
+{
+    display: flex;
+    gap: 3px;
+    
+}
+
+#przyciski button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.znak:first-child
+{
+    background-color:orange;
+    margin-top: 3px;
+}
+.rownasie
+{
+    background-color: lightskyblue;
+}
+
 
