@@ -1,4 +1,33 @@
+.index
+{
+    color: lightgrey;
+    background-color: black;
+    
+}
 
+.linki
+{
+    text-align: center;
+}
+.linki button
+{
+    color: lightgray;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30%;
+    overflow: hidden;
+    background-image: linear-gradient(red,black);
+    border: 0px;
+    height: 100px;
+}
+.linki button:hover {
+    background-image: linear-gradient(black, red); 
+    color: white;
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
 .row
 {
     display: flex;
@@ -29,10 +58,35 @@
     text-align: center;
 }
 
+.link
+{
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
 
-.row1
+
+.formularz
+{
+    text-align: center;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.formularz_tytul
+{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 4px;
+}
+
+.wiersz
 {
     display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 25px;
 }
 
 .kolumna
@@ -42,36 +96,63 @@
 }
 .kolumna label
 {   
-    display: block;
-    margin-bottom: 8px ;
-    margin-left: 25%;
+    
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    font-size: 20px;
+    font-size: 22px;
+    
 }
 
 .kolumna input, .kolumna select
 {
-    margin-bottom: 35px;
-    width: 50%;
-    font-size: 14px;
+    
+    width: 100%;
+    font-size:16px;
     border-radius: 5px;
     border-width: 1px;
-    height: 25px;
+    height: 30px;
     background-color: rgb(224, 247, 255);
-    box-sizing: border-box;
 
+    margin-bottom: 40px;
+    
+}
+
+.przycisk_czerwony
+{
+    background-color: red;
+}
+.przycisk_czerwony:hover
+{
+    background-color: darkred;
+}
+.przycisk_zielony
+{
+    background-color: green;
+}
+.przycisk_zielony:hover
+{
+    background-color: darkgreen;
 }
 
 .kolumna button
 {   
-    display: block;
-    width: 25%;
+    width: 40%;
     height: 75px;
-    margin: 0 auto;
     font-weight: 800;
     font-size: large;
     border-radius: 25px;
-    
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.kolumna button:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+    color: black;
+
 }
 
 #kalkulator
@@ -79,14 +160,16 @@
     border: 1px solid black ;
     margin: auto;
     text-align: center;
-    width: 30%;
+    width: 20%;
     padding: 5px;
     border-radius: 10px;
+    height: 500px;
 
 }
 
 #wynik
-{
+{   
+    height: 15%;
     width: 100%;
     text-align: right;
     padding: 2px;
@@ -100,20 +183,22 @@
     display: flex;
     flex-direction: column;
     gap: 3px;
-
+    height: 85%;
+    
+    
 }
 
 #przyciski div
 {
     display: flex;
     gap: 3px;
-    
+    flex: 1;
 }
 
 #przyciski button {
     flex: 1;
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .znak:first-child

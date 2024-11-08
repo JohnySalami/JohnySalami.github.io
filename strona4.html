@@ -4,64 +4,71 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    
     <div class="tytuly">
-        <h1 style="text-align: center;"> STRONA 4</h1>
-        <a href="index.html">Wróć na spis stron</a>
-    </div><br>
+        <h1 >STRONA 4</h1>
+    </div>
+    <a class="link" href="index.html">Spis stron</a>
+    <div class="Formularz">
+        <div class="Formularz_tytul" >Formularz</div>
+        
+        <div class="wiersz">
 
-    <div class="row1">
-
-        <div class="kolumna">
-
-            <label for="imie">Imię:</label>
-            <input type="text" id="imie">
-            <br>
-            <label for="nazwisko">Nazwisko:</label>
-            <input type="text" id="nazwisko"><br>
-            
-            <label for="panstwo">Państwo:</label>
-            <input type="text" id="panstwo"><br>
-
-            <label for="miasto">Miasto:</label>
-            <input type="text" id="miasto"><br>
-            
-            <label for="ulica">Ulica:</label>
-            <input type="text" id="ulica"><br>
-            
-            <label for="dom">Dom:</label>
-            <input type="text" id="dom"><br>
-
-            <button type="button" style="background-color: green;">Zatwierdź</button>
-        </div>
-
-        <div class="kolumna">
-
-            <label for="mieszkanie">Mieszkanie:</label>
-            <input type="text" id="mieszkanie">
-
-            <label for="telefon">Telefon:</label>
-            <input type="text" id="telefon">
-
-            <label for="data">Data urodzenia:</label>
-            <input type="date" id="data">
-
-            <label for="prawojazdy">Prawo jazdy:</label>
-            <select id="prawojazdy">
-                <option value="tak">Tak</option>
-                <option value="nie">Nie</option>
-            </select>
-
-            <label for="plec">Płeć:</label>
-            <select id="plec">
-                <option value="mezczyzna">Mężczyzna</option>
-                <option value="kobieta">Kobieta</option>
-            </select>
-
-            <label for="haslo">Hasło:</label>
-            <input type="text" id="haslo">
-
-            <button type="button" style="background-color: red;">Resetuj</button>
+            <div class="kolumna">
+    
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie">
+                <br>
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" id="nazwisko"><br>
+                
+                <label for="panstwo">Państwo:</label>
+                <input type="text" id="panstwo"><br>
+    
+                <label for="miasto">Miasto:</label>
+                <input type="text" id="miasto"><br>
+                
+                <label for="ulica">Ulica:</label>
+                <input type="text" id="ulica"><br>
+                
+                <label for="dom">Dom (numer):</label>
+                <input type="text" id="dom"><br>
+    
+                <button type="button" id="zatwierdz" class="przycisk_zielony" >Zatwierdź</button>
+            </div>
+    
+            <div class="kolumna">
+    
+                <label for="mieszkanie">Mieszkanie:</label>
+                <input type="text" id="mieszkanie">
+    
+                <label for="telefon">Telefon:</label>
+                <input type="text" id="telefon">
+    
+                <label for="data">Data urodzenia:</label>
+                <input type="date" id="data">
+    
+                <label for="prawojazdy">Prawo jazdy:</label>
+                <select id="prawojazdy">
+                    <option value="tak">Tak</option>
+                    <option value="nie">Nie</option>
+                </select>
+    
+                <label for="plec">Płeć:</label>
+                <select id="plec">
+                    <option value="mezczyzna">Mężczyzna</option>
+                    <option value="kobieta">Kobieta</option>
+                </select>
+    
+                <label for="haslo">Hasło:</label>
+                <input type="text" id="haslo">
+    
+                <button type="button" id="reset" class="przycisk_czerwony" >Resetuj</button>
+            </div>
         </div>
     </div>
+
+    <script src="formularz.js"></script>
+    
 </body>
 </html>
