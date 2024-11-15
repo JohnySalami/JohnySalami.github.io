@@ -8,6 +8,7 @@
 .linki
 {
     text-align: center;
+    
 }
 .linki button
 {
@@ -21,6 +22,7 @@
     background-image: linear-gradient(red,black);
     border: 0px;
     height: 100px;
+    box-shadow: 10px 10px 15px red;
 }
 .linki button:hover {
     background-image: linear-gradient(black, red); 
@@ -61,8 +63,19 @@
 .link
 {
     top: 5px;
-    left: 5px;
+    left: 10px;
     position: absolute;
+    background-color: grey;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px;
+}
+
+.link:hover
+{
+    background-color: darkgrey;   
+    transform: scale(1.05) ; 
+    box-shadow: 2px 2px 2px grey;
 }
 
 
@@ -121,6 +134,7 @@
 .przycisk_czerwony
 {
     background-color: red;
+    box-shadow: 6px 6px 4px grey;
 }
 .przycisk_czerwony:hover
 {
@@ -129,6 +143,7 @@
 .przycisk_zielony
 {
     background-color: green;
+    box-shadow: 6px 6px 4px grey;
 }
 .przycisk_zielony:hover
 {
