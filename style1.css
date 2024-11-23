@@ -1,7 +1,6 @@
 .index
 {
     color: lightgrey;
-    background-color: black;
     
 }
 
@@ -69,6 +68,7 @@
     border-radius: 5px;
     font-size: large;
     padding: 5px;
+    color: white;
 }
 
 .link:hover
@@ -226,4 +226,78 @@
     background-color: lightskyblue;
 }
 
+.zaloguj
+{
+    top: 5px;
+    right: 10px;
+    position: absolute;
+    background-color: green;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px;
+    color: white;
+}
+
+.zaloguj:hover
+{
+    background-color: darkgreen;   
+    transform: scale(1.05) ; 
+    box-shadow: 2px 2px 2px grey;
+}
+
+.login-container
+{
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+.login-container input
+{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    height: 30px;
+    
+}
+
+.login-container label
+{
+    text-align: left;
+    font-size: large;
+}
+.login-container button
+{   
+    margin-top: 10px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 5px;
+    font-size: large;
+    padding: 10px;
+    color: white;
+}
+
+.login-container button:hover
+{
+    background-color: darkgreen;   
+    transform: scale(1.05) ; 
+    box-shadow: 2px 2px 2px grey;
+    
+}
+
+.dane
+{
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    font-size: large;
+    border-radius: 10px;
+}
 

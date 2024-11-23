@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset="UTF-8">
     <title> Strona 4 </title>
     <link rel="stylesheet" href="style1.css">
 </head>
@@ -8,64 +9,74 @@
         <h1>STRONA 4</h1>
     </div>
     <button  class="link" onclick="window.location.href='index.html'">Spis stron</button>
+    <button class="zaloguj" onclick="window.location.href='login.html'">Zaloguj</button>
+
     <div class="Formularz">
         <div class="Formularz_tytul">Formularz</div>
         
-        <div class="wiersz">
-            <div class="kolumna">
-                <label for="imie">Imię:</label>
-                <input type="text" id="imie" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+" required title="Tylko litery.">
-                <br>
-                <label for="nazwisko">Nazwisko:</label>
-                <input type="text" id="nazwisko" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+" required title="Tylko litery."><br>
-                
-                <label for="panstwo">Państwo:</label>
-                <input type="text" id="panstwo" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+" required title="Tylko litery."><br>
-    
-                <label for="miasto">Miasto:</label>
-                <input type="text" id="miasto" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+" required title="Tylko litery."><br>
-                
-                <label for="ulica">Ulica:</label>
-                <input type="text" id="ulica" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ0-9\s]+" required title="Nazwa ulicy."><br>
-                
-                <label for="dom">Dom (numer):</label>
-                <input type="text" id="dom" pattern="\d+" required title="Tylko cyfry."><br>
-    
-                <button type="button" id="zatwierdz" class="przycisk_zielony">Zatwierdź</button>
+        <form action="display.php" method="post">
+            <div class="wiersz">
+                <div class="kolumna">
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" name="imie" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+" required title="Tylko litery.">
+                    <br>
+                    
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" id="nazwisko" name="nazwisko" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ-]+" required title="Tylko litery.">
+                    <br>
+                    
+                    <label for="panstwo">Państwo:</label>
+                    <input type="text" id="panstwo" name="panstwo" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\s]+" required title="Tylko litery.">
+                    <br>
+        
+                    <label for="miasto">Miasto:</label>
+                    <input type="text" id="miasto" name="miasto" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\s]+" required title="Tylko litery.">
+                    <br>
+                    
+                    <label for="ulica">Ulica:</label>
+                    <input type="text" id="ulica" name="ulica" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ0-9\s]+" required title="Nazwa ulicy.">
+                    <br>
+                    
+                    <label for="dom">Dom:</label>
+                    <input type="text" id="dom" name="dom" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ0-9]+" required title="Tylko cyfry.">
+                    <br>
+        
+                    <button type="submit" id="zatwierdz" class="przycisk_zielony">Zatwierdź</button>
+                </div>
+        
+                <div class="kolumna">
+                    <label for="mieszkanie">Mieszkanie:</label>
+                    <input type="text" id="mieszkanie" name="mieszkanie" title="Pole opcjonalne.">
+        
+                    <label for="telefon">Telefon:</label>
+                    <input type="tel" id="telefon" name="telefon" required title="9 cyfr.">
+        
+                    <label for="data">Data urodzenia:</label>
+                    <input type="date" id="data" name="data" required>
+        
+                    <label for="prawojazdy">Prawo jazdy:</label>
+                    <select id="prawojazdy" name="prawojazdy" required>
+                        <option value="niewybrano">-</option>
+                        <option value="tak">Tak</option>
+                        <option value="nie">Nie</option>
+                    </select>
+        
+                    <label for="plec">Płeć:</label>
+                    <select id="plec" name="plec" required>
+                        <option value="niewybrano">-</option>
+                        <option value="mezczyzna">Mężczyzna</option>
+                        <option value="kobieta">Kobieta</option>
+                    </select>
+        
+                    <label for="haslo">Hasło:</label>
+                    <input type="password" id="haslo" name="haslo" pattern=".{6,}" required title="Min. 6 znaków.">
+        
+                    <button type="button" id="reset" class="przycisk_czerwony">Resetuj</button>
+                </div>
             </div>
-    
-            <div class="kolumna">
-                <label for="mieszkanie">Mieszkanie:</label>
-                <input type="text" id="mieszkanie" title="Pole opcjonalne.">
-    
-                <label for="telefon">Telefon:</label>
-                <input type="tel" id="telefon" pattern="\d{9}" required title="9 cyfr.">
-    
-                <label for="data">Data urodzenia:</label>
-                <input type="date" id="data" required>
-    
-                <label for="prawojazdy">Prawo jazdy:</label>
-                <select id="prawojazdy" required>
-                    <option value="niewybrano">-</option>
-                    <option value="tak">Tak</option>
-                    <option value="nie">Nie</option>
-                </select>
-    
-                <label for="plec">Płeć:</label>
-                <select id="plec" required>
-                    <option value="niewybrano">-</option>
-                    <option value="mezczyzna">Mężczyzna</option>
-                    <option value="kobieta">Kobieta</option>
-                </select>
-    
-                <label for="haslo">Hasło:</label>
-                <input type="password" id="haslo" pattern=".{6,}" required title="Min. 6 znaków.">
-    
-                <button type="button" id="reset" class="przycisk_czerwony">Resetuj</button>
-            </div>
-        </div>
+        </form>
     </div>
 
-    <script src="formularz.js"></script>
+    <!--<script src="formularz.js"></script>-->
 </body>
 </html>

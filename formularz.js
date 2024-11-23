@@ -82,9 +82,3 @@ function resetujformularz() {
 
 document.getElementById("zatwierdz").addEventListener("click", waliduj);
 document.getElementById("reset").addEventListener("click", resetujformularz);
-
-
-
-
-
-
